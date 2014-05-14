@@ -8,7 +8,7 @@ sudo chown vagrant /etc/hhvm
 
 echo "Move HHVM my-php.ini"
 cd /
-sudo cp /srv/www/__config/hhvm-config/php.ini /etc/hhvm/my-php.ini
+sudo cp /srv/www/__hhvvvm/hhvm-config/php.ini /etc/hhvm/my-php.ini
 sudo hhvm -m daemon -c /etc/hhvm/my-php.ini -v Eval.EnableXHP=1
 sudo update-rc.d hhvm defaults
 
